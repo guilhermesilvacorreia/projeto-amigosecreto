@@ -7,7 +7,7 @@ let listaDeAmigos =[];
 
 function adicionarAmigos(){
     //busca valor 
-    let digiteNome = document.getElementById('amigo').value.toUpperCase().trim() // elimina espaços;
+    let digiteNome = document.getElementById('amigo').value.toUpperCase().trim() // -> elimina espaços;
     //verifa se o nome já esta na lista ou se não foi digitado nada
     if(listaDeAmigos.includes(digiteNome)){
         alert('Erro: Nome repetido');
@@ -30,7 +30,7 @@ function adicionarAmigos(){
 function atualizarLista() {
 // Obtém o elemento da lista
 const listaHTML = document.getElementById('listaAmigos');
-listaHTML.innerHTML = ''; // Limpa a lista atual
+listaHTML.innerHTML = ''; // -> Limpa a lista atual
 
  // Adiciona cada nome da lista como um item da lista HTML
  listaDeAmigos.forEach((amigo) => {
@@ -68,7 +68,7 @@ function sortearAmigos() {
 // Atualiza os resultados na interface
 function exibirResultado(resultado) {
     const resultadoHTML = document.getElementById('resultado');
-    resultadoHTML.innerHTML = ''; // Limpa resultados anteriores
+    resultadoHTML.innerHTML = ''; // -> Limpa resultados anteriores
 
     resultado.forEach((item) => {
         const li = document.createElement('li');
